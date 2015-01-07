@@ -2,7 +2,7 @@
 
 basic usage:
 ```js
-var norikra = require('node-norikra-client');
+var norikra = require('norikra-client');
 
 c = norikra.createClient('http://localhost:26571')
 // get a list of targets
