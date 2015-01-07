@@ -2,7 +2,7 @@
 
 basic usage:
 ```js
-var norikra = require('./index');
+var norikra = require('node-norikra-client');
 
 c = norikra.createClient('http://localhost:26571')
 // get a list of targets
@@ -15,50 +15,59 @@ c.targets(function (err, targets){
 
 ## open
 
-  c.open(target, fields, autoField, [callback])
-
+```js
+c.open(target, fields, autoField, [callback])
+```
 target | target name to open
 fields | an object describing the fields with keys being the field name and values being the type
 autoField | boolean
 
 ## close
 
-  c.close(target, [callback])
+```js
+c.close(target, [callback])
+```
 
 `target` is the name of target stream to close
 
 ## targets
 
-  c.targets([callback])
-
+```js
+c.targets([callback])
+```
 returns a list of opened targets
 
 ## register
 
-  c.register(name, query, [group], [callback])
-
+```js
+c.register(name, query, [group], [callback])
+```
 register a query. default group is 'default' if not specified.
 
 ## deregister
 
-  c.deregister(name, [callback])
-
+```js
+c.deregister(name, [callback])
+```
 deregister a query
 
 ## queries
 
-  c.queries([callback])
-
+```js
+c.queries([callback])
+```
 get a list of registered queries
 
 ## events
 
-  c.events(query_name, [callback])
-
+```js
+c.events(query_name, [callback])
+```
 get an array of events captured by the query and sweep
 
 ## send
 
-  c.send(target, events, [callback])
-
+```js
+c.send(target, events, [callback])
+```
 send an array of events to `target`
