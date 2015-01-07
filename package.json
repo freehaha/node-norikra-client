@@ -1,13 +1,17 @@
 {
   "name": "norikra-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node.js norikra client",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Freehaha",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freehaha/node-norikra-client.git"
+  },
   "dependencies": {
     "msgpack": "^0.2.4",
     "unirest": "^0.3.7"
