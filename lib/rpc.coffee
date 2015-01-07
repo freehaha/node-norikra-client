@@ -1,6 +1,5 @@
 unirest = require 'unirest'
 msgpack = require 'msgpack'
-streamBuffers = require('stream-buffers')
 
 MAX_MSGID = 1024
 
