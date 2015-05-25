@@ -33,7 +33,7 @@ class Norikra
   register: (name, query, group, cb)->
     if typeof group is 'function'
       cb = group
-      group = 'default'
+      group = null
     @client.invoke 'register', [
       name
       group

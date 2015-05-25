@@ -43,7 +43,7 @@ Norikra = (function() {
   Norikra.prototype.register = function(name, query, group, cb) {
     if (typeof group === 'function') {
       cb = group;
-      group = 'default';
+      group = null;
     }
     this.client.invoke('register', [name, group, query], cb);
   };
