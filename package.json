@@ -13,7 +13,7 @@
     "url": "https://github.com/freehaha/node-norikra-client.git"
   },
   "dependencies": {
-    "msgpack": "^0.2.4",
+    "msgpack": "^1.0.2",
     "unirest": "^0.3.7"
   },
   "devDependencies": {
